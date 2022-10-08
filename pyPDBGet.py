@@ -106,7 +106,9 @@ def download_PDB(szFile, szSoftware):
                 if fname.find("\\") != -1:
                     s = fname.split("\\")
                     fname = s[-1]
-                _log("[+] Found GUID : %s" % guid)
+                _log("[+] Found PDB Name : {}".format(fname))
+                _log("[+] Found PDB GUID : {}".format(guid))
+                _log("[+] Found PDB Age : {}".format(str(age)))
 
 
                 MS_lstofurls = [
