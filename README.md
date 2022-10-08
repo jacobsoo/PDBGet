@@ -1,7 +1,8 @@
 # PDBGet
-Grabbing PDB files.
-Just some random old project to grab the symbols.
+PDBGet will help to download PDB symbol files directly from Microsoft, Mozilla, Chrome and Nvidia's symbol servers by parsing an associated PE formatted executable.
 
+
+## Example of downloading PDB file for Microsoft's `tcpip.sys`
 ```
 $ python.exe pyPDBGet.py -s microsoft -f "C:\Windows\System32\drivers\tcpip.sys"
 
@@ -24,6 +25,8 @@ $ python.exe pyPDBGet.py -s microsoft -f "C:\Windows\System32\drivers\tcpip.sys"
 ```
 ---
 
+
+## Example of downloading PDB file for Microsoft.Identity.Client's `microsoft.identity.client.4.47.2.nupkg`
 ```
 $ python.exe pyPDBGet.py -s nuget -f "C:\Users\admin\Desktop\microsoft.identity.client.4.47.2.nupkg"
 
@@ -48,6 +51,8 @@ $ python.exe pyPDBGet.py -s nuget -f "C:\Users\admin\Desktop\microsoft.identity.
 ```
 ---
 
+
+## Example of downloading PDB file for Google Chrome's `libGLESv2.dll`
 ```
 $ python.exe pyPDBGet.py -s chrome -f "C:\Program Files (x86)\Google\Chrome\Application\106.0.5249.103\libGLESv2.dll"
 
@@ -70,6 +75,8 @@ $ python.exe pyPDBGet.py -s chrome -f "C:\Program Files (x86)\Google\Chrome\Appl
 ```
 ---
 
+
+## Example of downloading PDB file for Mozilla Firefox's `mozavcodec.dll`
 ```
 $ python.exe pyPDBGet.py -s mozilla -f "C:\Program Files\Mozilla Firefox\mozavcodec.dll"
 
